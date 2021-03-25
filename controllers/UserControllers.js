@@ -11,12 +11,7 @@ const UserControllers = {
         if(body.role === 'admin'  ||  body.role === 'user' ){
         var user = new User(body);
         user.save().then(() => {
-            return user.generateAuthToken();
-        }).then((token) => {
-            res.header('token',token).send({
-                user: user,
-                token: token
-            })
+          res.status(200).send({'Success': 'Create user Successfully'})
         }).catch((e) => {
             res.status(400).send(e);
         })}else{
