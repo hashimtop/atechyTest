@@ -78,7 +78,7 @@ Backend Team Assignment
      
      the api will check if role = admin then res
      
-# You are also required to implement a testing methoddepending on your framework, or using asimple HTTP request automation tool
+# You are also required to implement a testing method depending on your framework, or using asimple HTTP request automation tool
 
     nodemon automatically restarting the node application when file changes in the directory are detected.
     
